@@ -1,28 +1,18 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int N;
-    bool isPrime = true;
-    
-    cin >> N;
-    
-    if (N < 2) {
-        isPrime = false;
-    }
-    
-    for (int i = 2; i < N; i++) {
-        if (N % i == 0) {
-            isPrime = false;
-            break;
-        }
-    }
-    
-    if (isPrime) {
-        cout << "Простое" << endl;
+    int number;
+    cin >> number;
+
+    if (number > 0 && number % 2 == 0 && number < 100) {
+        cout << "Подходит" << endl;
     } else {
-        cout << "Не простое" << endl;
-    }
-    
+        cout << "Не подходит" << endl;
+    } // Ваш код:
+
+
+
     return 0;
 }
